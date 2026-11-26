@@ -3,7 +3,6 @@
 ### Технологии:
 - WPF / C#
 - .NET Framework 4.8
-- C# 7.3
 - PostgreSQL
 - ADO.NET / Npgsql 4.1.13
 

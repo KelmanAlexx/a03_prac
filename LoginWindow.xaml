@@ -1,0 +1,38 @@
+<Window x:Class="ShoeStore.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Icon="Images/app.ico"
+        Title="Авторизация — Магазин обуви"
+        Height="430" Width="560"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Background="{StaticResource AdditionalBackgroundBrush}" CornerRadius="5" Padding="16">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Image Source="Images/Logo.png" Width="64" Height="64" Stretch="Uniform" Margin="0,0,16,0"/>
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock Text="Магазин обуви" FontSize="25" FontWeight="Bold"/>
+                    <TextBlock Text="Информационная система" Foreground="#555555"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <StackPanel Grid.Row="1" Width="310" VerticalAlignment="Center">
+            <TextBlock Text="Вход в систему" FontSize="20" FontWeight="Bold" Margin="4,0,4,12"/>
+            <TextBlock Text="Логин"/>
+            <TextBox x:Name="LoginTextBox"/>
+            <TextBlock Text="Пароль"/>
+            <PasswordBox x:Name="PasswordBox" Margin="4" Padding="6"/>
+            <Button Content="Войти" Click="LoginButton_Click" Margin="4,12,4,4"/>
+            <Button Content="Войти как гость" Click="GuestButton_Click" Background="#D2F6E7"/>
+        </StackPanel>
+
+        <TextBlock Grid.Row="2" Text="Магазин обуви" Foreground="Gray" HorizontalAlignment="Right"/>
+    </Grid>
+</Window>

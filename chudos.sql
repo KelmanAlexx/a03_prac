@@ -400,14 +400,6 @@ ALTER TABLE ONLY public.products
 ALTER TABLE ONLY public.users
     ADD CONSTRAINT users_role_id_fkey FOREIGN KEY (role_id) REFERENCES public.roles(id) NOT VALID;
 
--- ============================================================
--- ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ ДЛЯ WPF-ПРИЛОЖЕНИЯ
--- ============================================================
-
--- Дополнительная настройка для исходной базы chudos.sql.
--- Исходные таблицы и данные не переименовываются и не удаляются.
--- Выполнять после импорта chudos.sql в базу exam_v1.
-
 -- Автоматическая выдача ID новым заказам.
 ALTER TABLE public.orders
     ALTER COLUMN id SET DEFAULT nextval('public.orders_id_seq');

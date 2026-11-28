@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:models="clr-namespace:ShoeStore.Models"
         Icon="Images/app.ico"
-        Title="Товары — Магазин обуви"
+        Title="Товары — Магазин электроники"
         Height="760" Width="1180"
         MinHeight="620" MinWidth="900"
         WindowStartupLocation="CenterScreen">
@@ -23,7 +23,7 @@
                 </Grid.ColumnDefinitions>
                 <Image Source="Images/Logo.png" Width="58" Height="58" Stretch="Uniform" Margin="0,0,14,0"/>
                 <StackPanel Grid.Column="1" VerticalAlignment="Center">
-                    <TextBlock Text="Магазин обуви" FontSize="23" FontWeight="Bold"/>
+                    <TextBlock Text="Магазин электроники" FontSize="23" FontWeight="Bold"/>
                     <TextBlock Text="Каталог товаров"/>
                 </StackPanel>
                 <StackPanel Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right">

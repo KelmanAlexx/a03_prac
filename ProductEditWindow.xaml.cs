@@ -33,7 +33,7 @@ namespace ShoeStore
 
                 if (_oldArticle == null)
                 {
-                    Title = "Добавление товара — Магазин обуви";
+                    Title = "Добавление товара — Магазин электроники";
                     IdInfoTextBlock.Text = "Артикул должен быть уникальным.";
                     DeleteButton.Visibility = Visibility.Collapsed;
                     PhotoImage.Source = ImageLoader.Load(null);
@@ -42,7 +42,7 @@ namespace ShoeStore
                 }
                 else
                 {
-                    Title = "Редактирование товара — Магазин обуви";
+                    Title = "Редактирование товара — Магазин электроники";
                     LoadProduct();
                 }
             }

@@ -50,7 +50,7 @@ namespace ShoeStore
 
         private void PrepareNewOrder()
         {
-            Title = "Оформление заказа — Магазин обуви";
+            Title = "Оформление заказа — Магазин электроники";
             HeaderTextBlock.Text = "Оформление заказа";
             _orderDate = DateTime.Today;
             OrderDateTextBox.Text = _orderDate.ToString("dd.MM.yyyy");
@@ -91,7 +91,7 @@ namespace ShoeStore
                 return;
             }
 
-            Title = "Редактирование заказа — Магазин обуви";
+            Title = "Редактирование заказа — Магазин электроники";
             HeaderTextBlock.Text = "Редактирование заказа №" + order.OrderId;
             _orderDate = order.OrderDate;
             ClientComboBox.SelectedValue = order.UserId;
